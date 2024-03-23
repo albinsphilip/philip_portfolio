@@ -1,0 +1,43 @@
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #32CD32, #FFD700, #000); /* Gradient background */
+    overflow: hidden; /* Ensure border-radius is applied correctly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth effect */
+    padding: 1rem;
+  }
+  
+  .Navbar-button {
+    color: #0939e8; /* Button text color */
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+    padding: 0.5rem 1rem; /* Added padding */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 5px;
+  }
+  
+  .Navbar-button:hover {
+    color: #f85e5e; /* Change color on hover */
+    transform: scale(1.05); /* Scale button on hover */
+  }
+  
+  /* Add animation keyframes for button transition */
+  @keyframes Nav-button-transition {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Move button up */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to navbar button */
+  .Navbar-button:hover {
+    animation: Nav-button-transition 0.5s ease;
+  }

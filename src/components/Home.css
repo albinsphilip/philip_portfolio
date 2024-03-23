@@ -1,0 +1,23 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #3500D3, #6c5ce7);
+  color: #282828;
+  font-family: 'Bungee Inline', sans-serif;
+}
+
+.Home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+}
+
+.Home p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
